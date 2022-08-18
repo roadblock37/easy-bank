@@ -1,0 +1,58 @@
+:root {
+    --primaryText: #2D314D;
+    --linkHover: #30C88F;
+    --footerBackground: #2D314D;
+    --headerBackground: #FFFFFF;
+    --secondaryBackground: #F4F5F7;
+    --lightBackground: #FAFAFA;
+    --lightText: #FAFAFA;
+    --secondaryText: #9597A5;
+    --linearGradient: linear-gradient(to bottom right, #33D35E, #2AB6D9);
+
+}
+
+/* universal styling */
+* {
+    font-family: 'Public Sans', sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* header styling */
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+   
+}
+
+nav {
+    color: var(--secondaryText);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* footer styling */
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: var(--footerBackground);
+    color: var(--lightText);
+}
+
+button {
+    color: var(--lightText);
+    background-color: var(--linearGradient);
+    font-size: 0.75rem;
+    font-weight: 700;
+    border-radius: 1.5rem;
+    width: 10rem;
+    height: 2.75rem;
+
+}
+
+button:hover {
+    cursor: pointer;
+}

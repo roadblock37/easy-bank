@@ -104,6 +104,13 @@ button:hover {
     padding-bottom: 6rem;
 }
 
+.top-section img {
+    position: absolute;
+    right: -5%;
+    top: 13%;
+    width: 50%;
+}
+
 .top-section-info-container {
     display: flex;
     flex-direction: column;

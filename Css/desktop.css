@@ -79,7 +79,7 @@ footer {
 
 button {
     color: var(--lightText);
-    background-color: linear-gradient(bottom right, #33D35E, #2AB6D9);
+    background-image: linear-gradient(to bottom right, #33D35E, #2AB6D9);
     font-size: 0.75rem;
     font-weight: 700;
     border-radius: 1.5rem;

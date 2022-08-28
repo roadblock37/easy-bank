@@ -85,6 +85,7 @@ button {
     background-image: linear-gradient(to 
     bottom right, #33D35E, #2AB6D9);
     font-size: 0.75rem;
+    border-style: none;
     font-weight: 700;
     border-radius: 1.5rem;
     width: 10rem;
@@ -120,10 +121,10 @@ button:hover {
 .top-section-info-container {
     display: flex;
     flex-direction: column;
-    /* justify-content:left; */
     flex-wrap: wrap;
     width: 45%;
 }
+
 .top-section-info-container p {
     width: 80%;
     margin-bottom: 3rem;
@@ -131,7 +132,7 @@ button:hover {
     line-height: 1.75rem;
 }
 
-/* flex container that holds info sections of second section */
+/* flex container that holds info-child sections of second section */
 .info-flex-container {
     display: flex;
     flex-direction: row;
@@ -142,9 +143,13 @@ button:hover {
     width: 100%;
 }
 
+/* second section */
 .choose-section {
     padding-bottom: 6rem;
+    background-color: var(--secondaryBackground);
 }
+
+/* info heading and paragraph of choose section */
 .choose-info {
     width: 65%;
     padding: 8rem;
@@ -160,8 +165,42 @@ button:hover {
     font-size: 1.25rem;
     line-height: 1.75rem;
 }
+
+/* child elements in info-flex-container in a row on 
+desktop and column in mobile */
 .info-child {
     display: flex;
     flex-direction: column;
     width: 23%;   
+}
+
+/* third section latest articles */
+.latest-article-section {
+    padding-left: 8rem;
+    padding-right: 5rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+
+}
+
+.latest-article-section h2 {
+    font-size: 3rem;
+    font-weight: 100;
+}
+
+/* article flex container in a row on desktop and column in mobile */
+.article-flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* article in article-flex-container */
+.article-child {
+    width: 23%;
+}
+
+.article-child img {
+    max-width: 100%;
+   
 }

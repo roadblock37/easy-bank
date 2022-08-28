@@ -7,7 +7,7 @@
     --lightBackground: #FAFAFA;
     --lightText: #FAFAFA;
     --secondaryText: #9597A5;
-    --linearGradient: linear-gradient(to bottom right, #33D35E, #2AB6D9);
+    
 
 }
 
@@ -54,11 +54,13 @@ header {
     padding-right: 5rem;  
 }
 
+/* subscribe button in header */
 header button {
     margin-bottom: 1rem;
     margin-top: 1rem;
 }
 
+/* nav bar */
 nav {
     color: var(--secondaryText);
     display: flex;
@@ -77,9 +79,11 @@ footer {
     color: var(--lightText);
 }
 
+/* universal button styling */
 button {
     color: var(--lightText);
-    background-image: linear-gradient(to bottom right, #33D35E, #2AB6D9);
+    background-image: linear-gradient(to 
+    bottom right, #33D35E, #2AB6D9);
     font-size: 0.75rem;
     font-weight: 700;
     border-radius: 1.5rem;
@@ -92,6 +96,7 @@ button:hover {
     cursor: pointer;
 }
 
+/* first section at top with basic info */
 .top-section {
     background-color: var(--lightBackground);
     background-image: url("../images/bg-intro-desktop.svg");
@@ -104,6 +109,7 @@ button:hover {
     padding-bottom: 6rem;
 }
 
+/* phone image overlayed over background image in top section */
 .top-section img {
     position: absolute;
     right: -5%;
@@ -123,4 +129,39 @@ button:hover {
     margin-bottom: 3rem;
     font-size: 1.25rem;
     line-height: 1.75rem;
+}
+
+/* flex container that holds info sections of second section */
+.info-flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    padding-left: 8rem;
+    padding-right: 6rem;
+    width: 100%;
+}
+
+.choose-section {
+    padding-bottom: 6rem;
+}
+.choose-info {
+    width: 65%;
+    padding: 8rem;
+}
+
+/* h2 in choose-info */
+.choose-info h2 {
+    font-size: 3rem;
+    font-weight: 100;
+}
+
+.choose-info p {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+}
+.info-child {
+    display: flex;
+    flex-direction: column;
+    width: 23%;   
 }

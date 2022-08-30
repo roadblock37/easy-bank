@@ -206,4 +206,56 @@ desktop and column in mobile */
 }
 
 /* TODO */
-footer {}
+footer {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    height: 191px;
+    width: 100%;
+
+}
+
+/* footer container with logo and social icons */
+.footer-image-container {
+    display: flex;
+    flex-direction: column;
+    float: left;
+    justify-content: space-around;
+    padding-left: 8rem;
+    padding-right: 6rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    width: 32%;
+}
+
+.footer-image-container img {
+    /* background-color: #FFFFFF; */
+}
+
+.social-flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* parent container that has nav links in the footer */
+.link-flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+/* container with nav links in the footer */
+.link-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.trademark-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    float: right;
+}

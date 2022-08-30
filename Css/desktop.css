@@ -209,6 +209,7 @@ desktop and column in mobile */
 footer {
     display: flex;
     flex-direction: row;
+    align-items: center;
     /* justify-content: space-between; */
     height: 191px;
     width: 100%;
@@ -220,12 +221,13 @@ footer {
     display: flex;
     flex-direction: column;
     float: left;
-    justify-content: space-around;
+    justify-content: space-between;
     padding-left: 8rem;
     padding-right: 6rem;
     padding-top: 2rem;
     padding-bottom: 2rem;
     width: 32%;
+    height: 90%;
 }
 
 .footer-image-container img {
@@ -243,7 +245,9 @@ footer {
 .link-flex-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    width: 25%;
+    height: 80%;
 }
 
 /* container with nav links in the footer */
@@ -251,11 +255,16 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    height: 100%;
 }
 
 .trademark-container {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    align-items: flex-end;
     float: right;
+    margin-right: 5rem;
+    margin-left: 12rem;
+    height: 55%;
 }

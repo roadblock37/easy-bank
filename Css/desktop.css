@@ -1,6 +1,7 @@
 :root {
     --primaryText: #2D314D;
     --linkHover: #30C88F;
+    --footerLinkHover: #30C88F;
     --footerBackground: #2D314D;
     --headerBackground: #FFFFFF;
     --secondaryBackground: #F4F5F7;
@@ -202,10 +203,15 @@ desktop and column in mobile */
 
 .article-child img {
     max-width: 100%;
-   
 }
 
-/* TODO */
+/* link in articles */
+.article-child a:hover {
+    cursor: pointer;
+    color: var(--linkHover);
+}
+
+/* footer */
 footer {
     display: flex;
     flex-direction: row;
@@ -230,15 +236,18 @@ footer {
     height: 90%;
 }
 
-.footer-image-container img {
-    /* background-color: #FFFFFF; */
-}
 
+/* flex container for social icons */
 .social-flex-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
+}
+
+.social-flex-container a:hover {
+    /* color: var(--footerLinkHover); */
+    background-color: var(--footerLinkHover);
 }
 
 /* parent container that has nav links in the footer */
@@ -256,6 +265,16 @@ footer {
     flex-direction: column;
     justify-content: space-evenly;
     height: 100%;
+}
+
+/* anchor elements in footer */
+.link-container a {
+    color: var(--headerBackground);
+}
+
+.link-container a:hover {
+    color: var(--footerLinkHover);
+    cursor: pointer;
 }
 
 .trademark-container {

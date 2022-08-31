@@ -15,11 +15,11 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;700&display=swap"
       rel="stylesheet" />
-    <!-- <link
+    <link
       rel="stylesheet"
       type="text/css"
       href="./Css/index.css"
-      media="screen and (max-width: 767px)" /> -->
+      media="screen and (max-width: 767px)" />
     <link rel="stylesheet" type="text/css" href="./Css/desktop.css" />
     <!-- <link rel="stylesheet" type="text/css" href="./Css/all.css"/> -->
     <script
@@ -29,39 +29,58 @@
     <title>Frontend Mentor | Easybank landing page</title>
   </head>
   <body>
+    <nav role="navigation">
+      <div id="menuToggle">
+        <!-- hidden checkbox used as a click reciever -->
+        <input type="checkbox"/>
+        <!-- spans that act as the hamburger -->
+        <span></span>
+        <span></span>
+        <span></span>
+        <!-- links inside the menu -->
+        <ul id="menu">
+          <a href="#">
+            <li>Home</li>
+          </a>
+          <a href="#">
+            <li>about</li>
+          </a>
+          <a href="#">
+            <li>Contact</li>
+          </a>
+          <a href="#">
+            <li>Blog</li>
+          </a>
+          <a href="#">
+            <li>Careers</li>
+          </a>
+        </ul>
+      </div>
+      <!-- nav links hidden by default on mobile -->
+      
+      <!-- font awesome hamburger icon for mobile menu -->
+      <!-- <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a> -->
+    </nav>
     <!-- <header>
       <img src="./images/logo.svg" alt="" />
       
-      <nav>
-        nav links hidden by default on mobile
-        <div id="links">
-          <a href="#">Home</a>
-          <a href="#">About</a>
-          <a href="#">Contact</a>
-          <a href="#">Blog</a>
-          <a href="#">Careers</a>          
-        </div>
-        <button type="button">Request Invite</button>
-        font awesome hamburger icon for mobile menu
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
-        </a>
-      </nav>
+      
+      <button type="button">Request Invite</button>
+
     </header> -->
-    <nav>
-      <!-- nav header -->
-      <div class="nav-header">
+    <!-- <nav role="navigation">
+      nav header
+      <div class="nav-header>
         <img src="./images/logo.svg" alt="" class="logo" alt="logo" />
         <div class="burger">
-          <span>&nbsp;</span>
-          <span>&nbsp;</span>
-          <span>&nbsp;</span>
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
-        <!-- <a id="nav-toggle">
-          <i class="fas fa-bars"></i>
-        </a> -->
       </div>
-      <!-- links -->
+      links
       <ul class="links">
         <a href="#">
           <li>Home</li>
@@ -80,7 +99,7 @@
         </a>
       </ul>
       <button type="button">Request Invite</button>
-    </nav>
+    </nav> -->
     <main>
       <!-- top section Next Generation digital banking -->
       <section class="top-section">

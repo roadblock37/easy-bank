@@ -11,50 +11,6 @@
     --transition: all 0.3s linear;
 }
 
-@media screen and (max-width: 767px) {
-    .links {
-        height: 0;
-        overflow: hidden;
-        
-        }
-    
-    #nav-toggle {
-        display: block;
-    }
-
-    nav button {
-        display: none;
-    }
-
-
-    /* container that holds company logo and hamburger menu icon */
-.nav-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-}
-}
-
-
-@media screen and (min-width: 768px) {
-    /* #nav-toggle {
-        display: none;
-    } */
-
-    .burger {
-        display: none;
-    }
-
-    /* UL of nav links container */
-.links {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    width: 50%;
-}
-    
-}
 
 /* universal styling */
 * {
@@ -87,6 +43,8 @@ ul {
 }
 
 
+
+
 /* hover state for hamburger menu */
 #nav-toggle:hover {
     cursor: pointer;
@@ -104,7 +62,7 @@ li:hover {
 }
 
 /* header styling */
-/* header {
+header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -114,7 +72,7 @@ li:hover {
     width: 100%;
     padding-left: 8rem;
     padding-right: 5rem;  
-} */
+}
 
 
 

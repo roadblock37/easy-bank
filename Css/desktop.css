@@ -8,6 +8,7 @@
     --lightBackground: #FAFAFA;
     --lightText: #FAFAFA;
     --secondaryText: #9597A5;
+    --temp: #2D314D;
     
 
 }
@@ -243,6 +244,16 @@ footer {
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
+}
+
+/* sets defualt fill of social icons to white */
+.social-flex-container svg {
+    fill: #FFFFFF;
+}
+/* social icon hover state */
+.social:hover {
+    fill: #30C88F;
+    cursor: pointer;
 }
 
 .social-flex-container a:hover {

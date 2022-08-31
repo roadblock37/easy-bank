@@ -72,6 +72,36 @@ nav {
     font-size: 0.75rem;   
 }
 
+.underline {
+    height: 5px;
+    width: 100%;
+    color: var(--linkHover);
+    
+}
+
+nav a::after {
+    /* border-bottom: 5px solid var(--linkHover);
+    padding-bottom: 10%; */
+    content: '';
+    position: absolute;
+    bottom: -170%;
+    left: 0;
+    width: 0%;
+    height: 5px;
+    background-image: linear-gradient(to right, #31d35c, #2bb7da);
+    transition: all .5s;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+nav a:hover {
+    color: var(--primaryText);
+    cursor: pointer;
+    /* border-bottom: 5px solid var(--linkHover); */
+    
+}
+
 /* footer styling */
 footer {
     display: flex;

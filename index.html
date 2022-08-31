@@ -25,6 +25,8 @@
       type="text/css"
       href="./Css/desktop.css"
       media="screen and (min-width: 1024px)" />
+    <!-- <link rel="stylesheet" type="text/css" href="./Css/all.css"/> -->
+      <script src="https://kit.fontawesome.com/72bf3d5cdf.js" crossorigin="anonymous"></script>
 
     <title>Frontend Mentor | Easybank landing page</title>
   </head>
@@ -32,11 +34,19 @@
     <header>
       <img src="./images/logo.svg" alt="" />
       <nav>
-        <a href="#">Home</a>
+        <!-- nav links hidden by default on mobile -->
+        <div id="links">
+          <a href="#">Home</a>        
         <a href="#">About</a>
         <a href="#">Contact</a>
         <a href="#">Blog</a>
         <a href="#">Careers</a>
+        </div>
+        <!-- font awesome hamburger icon for mobile menu -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+        
       </nav>
       <button type="button">Request Invite</button>
     </header>
@@ -244,5 +254,6 @@
         <p>© Easybank. All Rights Reserved</p>
       </div>
     </footer>
+    <script href="./index.js"></script>
   </body>
 </html>

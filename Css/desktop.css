@@ -8,9 +8,52 @@
     --lightBackground: #FAFAFA;
     --lightText: #FAFAFA;
     --secondaryText: #9597A5;
-    --temp: #2D314D;
-    
+    --transition: all 0.3s linear;
+}
 
+@media screen and (max-width: 767px) {
+    .links {
+        height: 0;
+        overflow: hidden;
+        
+        }
+    
+    #nav-toggle {
+        display: block;
+    }
+
+    nav button {
+        display: none;
+    }
+
+
+    /* container that holds company logo and hamburger menu icon */
+.nav-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+}
+
+
+@media screen and (min-width: 768px) {
+    /* #nav-toggle {
+        display: none;
+    } */
+
+    .burger {
+        display: none;
+    }
+
+    /* UL of nav links container */
+.links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 50%;
+}
+    
 }
 
 /* universal styling */
@@ -18,11 +61,6 @@
     font-family: 'Public Sans', sans-serif;
     font-size: 16px;
     box-sizing: border-box;
-}
-
-/* body element */
-body {
-    
 }
 
 /* anchor elements */
@@ -43,64 +81,66 @@ h1 {
     font-weight: 400;
 }
 
+/* list of nav links */
+ul {
+    list-style-type: none;
+}
+
+
+/* hover state for hamburger menu */
+#nav-toggle:hover {
+    cursor: pointer;
+}
+
+/* hover state for nav links */
+li:hover {
+    cursor: pointer;
+    color: var(--primaryText);
+}
+
+/* class applied when hamburger is clicked in mobile */
+.show-links {
+    height: 10rem;
+}
+
 /* header styling */
-header {
+/* header {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     background-color: var(--headerBackground);
     margin-top: -8px;
     width: 100%;
-    padding-left: 5rem;
+    padding-left: 8rem;
     padding-right: 5rem;  
-}
+} */
 
-/* subscribe button in header */
-header button {
-    margin-bottom: 1rem;
-    margin-top: 1rem;
-}
+
 
 /* nav bar */
 nav {
     color: var(--secondaryText);
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-size: 0.75rem;
+    padding-left: 8rem;
+    padding-right: 5rem;   
+}
+
+/* #links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
     width: 50%;
-    font-size: 0.75rem;   
-}
-
-.underline {
-    height: 5px;
-    width: 100%;
-    color: var(--linkHover);
     
-}
+} */
 
-nav a::after {
-    /* border-bottom: 5px solid var(--linkHover);
-    padding-bottom: 10%; */
-    content: '';
-    position: absolute;
-    bottom: -170%;
-    left: 0;
-    width: 0%;
-    height: 5px;
-    background-image: linear-gradient(to right, #31d35c, #2bb7da);
-    transition: all .5s;
-}
 
-nav a:hover::after {
-    width: 100%;
-}
-nav a:hover {
-    color: var(--primaryText);
-    cursor: pointer;
-    /* border-bottom: 5px solid var(--linkHover); */
-    
-}
 
 /* footer styling */
 footer {

@@ -1,13 +1,16 @@
+/* mobile css file */
 :root {
     --primaryText: #2D314D;
     --linkHover: #30C88F;
+    --footerLinkHover: #30C88F;
     --footerBackground: #2D314D;
     --headerBackground: #FFFFFF;
     --secondaryBackground: #F4F5F7;
     --lightBackground: #FAFAFA;
     --lightText: #FAFAFA;
     --secondaryText: #9597A5;
-    --linearGradient: linear-gradient(to bottom right, #33D35E, #2AB6D9);
+    --temp: #2D314D;
+    
 
 }
 
@@ -18,19 +21,87 @@
     box-sizing: border-box;
 }
 
+/* body element */
+body {
+    
+}
+
+/* anchor elements */
+a {
+    text-decoration: none;
+    color: var(--secondaryText);
+}
+
+/* p elements */
+p {
+    color: var(--secondaryText);
+}
+
+/* h1 elements */
+h1 {
+    font-size: 4rem;
+    line-height: 5rem;
+    font-weight: 400;
+}
+
 /* header styling */
 header {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-   
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--headerBackground);
+    margin-top: -8px;
+    width: 100%;
+    padding-left: 5rem;
+    padding-right: 5rem;  
 }
 
+/* subscribe button in header */
+header button {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+/* nav bar */
 nav {
     color: var(--secondaryText);
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
+    width: 50%;
+    font-size: 0.75rem;   
+}
+/* stlye nav menu */
+nav {
+    overflow: hidden;
+    position: relative;
+}
+
+/* hide links inside nav menu */
+nav #links {
+    display: none;
+}
+
+/* hide the button in the nav bar */
+nav button {
+    display: none;
+}
+
+
+
+/* stlye hamburger menu*/
+nav a.icon {
+    background: white;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+nav a:hover {
+    color: var(--primaryText);
+    cursor: pointer;
 }
 
 /* footer styling */
@@ -42,10 +113,13 @@ footer {
     color: var(--lightText);
 }
 
+/* universal button styling */
 button {
     color: var(--lightText);
-    background-color: var(--linearGradient);
+    background-image: linear-gradient(to 
+    bottom right, #33D35E, #2AB6D9);
     font-size: 0.75rem;
+    border-style: none;
     font-weight: 700;
     border-radius: 1.5rem;
     width: 10rem;
@@ -55,4 +129,204 @@ button {
 
 button:hover {
     cursor: pointer;
+}
+
+/* first section at top with basic info */
+.top-section {
+    background-color: var(--lightBackground);
+    background-image: url("../images/bg-intro-desktop.svg");
+    background-position-y: 70%;
+    background-position-x: 600px;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding-left: 8rem;
+    padding-top: 5rem;
+    padding-bottom: 6rem;
+}
+
+/* phone image overlayed over background image in top section */
+.top-section img {
+    position: absolute;
+    right: -5%;
+    top: 13%;
+    width: 50%;
+}
+
+.top-section-info-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 45%;
+}
+
+.top-section-info-container p {
+    width: 80%;
+    margin-bottom: 3rem;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+}
+
+/* flex container that holds info-child sections of second section */
+.info-flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    padding-left: 8rem;
+    padding-right: 6rem;
+    width: 100%;
+}
+
+/* second section */
+.choose-section {
+    padding-bottom: 6rem;
+    background-color: var(--secondaryBackground);
+}
+
+/* info heading and paragraph of choose section */
+.choose-info {
+    width: 65%;
+    padding: 8rem;
+}
+
+/* h2 in choose-info */
+.choose-info h2 {
+    font-size: 3rem;
+    font-weight: 100;
+}
+
+.choose-info p {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+}
+
+/* child elements in info-flex-container in a row on 
+desktop and column in mobile */
+.info-child {
+    display: flex;
+    flex-direction: column;
+    width: 23%;   
+}
+
+/* third section latest articles */
+.latest-article-section {
+    padding-left: 8rem;
+    padding-right: 5rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+
+}
+
+.latest-article-section h2 {
+    font-size: 3rem;
+    font-weight: 100;
+}
+
+/* article flex container in a row on desktop and column in mobile */
+.article-flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* article in article-flex-container */
+.article-child {
+    width: 23%;
+}
+
+.article-child img {
+    max-width: 100%;
+}
+
+/* link in articles */
+.article-child a:hover {
+    cursor: pointer;
+    color: var(--linkHover);
+}
+
+/* footer */
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* justify-content: space-between; */
+    height: 191px;
+    width: 100%;
+
+}
+
+/* footer container with logo and social icons */
+.footer-image-container {
+    display: flex;
+    flex-direction: column;
+    float: left;
+    justify-content: space-between;
+    padding-left: 8rem;
+    padding-right: 6rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    width: 32%;
+    height: 90%;
+}
+
+
+/* flex container for social icons */
+.social-flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* sets defualt fill of social icons to white */
+.social-flex-container svg {
+    fill: #FFFFFF;
+}
+/* social icon hover state */
+.social:hover {
+    fill: #30C88F;
+    cursor: pointer;
+}
+
+.social-flex-container a:hover {
+    /* color: var(--footerLinkHover); */
+    background-color: var(--footerLinkHover);
+}
+
+/* parent container that has nav links in the footer */
+.link-flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 25%;
+    height: 80%;
+}
+
+/* container with nav links in the footer */
+.link-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+}
+
+/* anchor elements in footer */
+.link-container a {
+    color: var(--headerBackground);
+}
+
+.link-container a:hover {
+    color: var(--footerLinkHover);
+    cursor: pointer;
+}
+
+.trademark-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    float: right;
+    margin-right: 5rem;
+    margin-left: 12rem;
+    height: 55%;
 }

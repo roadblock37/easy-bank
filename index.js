@@ -1,11 +1,27 @@
-// classList - shows/gets all classes
-// contains - checks classList for specific class
-// add - add class
-// remove - remove class
-// toggle - toggles class
-const navToggle = document.getElementById("nav-toggle");
-const links = document.querySelector(".links");
-navToggle.addEventListener("click", function () {
-    console.log("hamburger clicked")
-links.classList.toggle("show-links");
-});
+const menu = document.querySelector(".menu");
+const menuItems = document.querySelectorAll(".menuItem");
+const hamburger = document.querySelector(".hamburger");
+const closeIcon = document.querySelector(".closeIcon");
+const menuIcon = document.querySelector(".menuIcon");
+
+function toggleMenu (){
+    if (menu.classList.contains("showMenu")){
+        menu.classList.remove("showMenu");
+        closeIcon.style.display = "none";
+        menuIcon.style.display = "block";
+
+    }
+    else {
+        menu.classList.add("showMenu");
+        closeIcon.style.display = "block";
+        menuIcon.style.display = "none";
+    }
+}
+
+hamburger.addEventListener("click", toggleMenu);
+
+// menuItems.forEach(
+//     function(menuItem){
+//         menuItem.addEventListener("click", toggleMenu);
+//     }
+// )

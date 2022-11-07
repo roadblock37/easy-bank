@@ -15,6 +15,11 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;700&display=swap"
       rel="stylesheet" />
+      <!-- material ui icons for hamburger menu -->
+      <link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/icon?family=Material+Icons"
+/>
     <link
       rel="stylesheet"
       type="text/css"
@@ -29,77 +34,17 @@
     <title>Frontend Mentor | Easybank landing page</title>
   </head>
   <body>
-    <nav role="navigation">
-      <div id="menuToggle">
-        <!-- hidden checkbox used as a click reciever -->
-        <input type="checkbox"/>
-        <!-- spans that act as the hamburger -->
-        <span></span>
-        <span></span>
-        <span></span>
-        <!-- links inside the menu -->
-        <ul id="menu">
-          <a href="#">
-            <li>Home</li>
-          </a>
-          <a href="#">
-            <li>about</li>
-          </a>
-          <a href="#">
-            <li>Contact</li>
-          </a>
-          <a href="#">
-            <li>Blog</li>
-          </a>
-          <a href="#">
-            <li>Careers</li>
-          </a>
-        </ul>
-      </div>
-      <!-- nav links hidden by default on mobile -->
-      
-      <!-- font awesome hamburger icon for mobile menu -->
-      <!-- <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
-      </a> -->
-    </nav>
-    <!-- <header>
-      <img src="./images/logo.svg" alt="" />
-      
-      
-      <button type="button">Request Invite</button>
-
-    </header> -->
-    <!-- <nav role="navigation">
-      nav header
-      <div class="nav-header>
-        <img src="./images/logo.svg" alt="" class="logo" alt="logo" />
-        <div class="burger">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </div>
-      links
-      <ul class="links">
-        <a href="#">
-          <li>Home</li>
-        </a>
-        <a href="#">
-          <li>about</li>
-        </a>
-        <a href="#">
-          <li>Contact</li>
-        </a>
-        <a href="#">
-          <li>Blog</li>
-        </a>
-        <a href="#">
-          <li>Careers</li>
-        </a>
-      </ul>
-      <button type="button">Request Invite</button>
-    </nav> -->
+    <ul class="menu">
+      <li><a class="menuItem" href="#">Home</a></li>
+      <li><a class="menuItem" href="#">About</a></li>
+      <li><a class="menuItem" href="#">Contact</a></li>
+      <li><a class="menuItem" href="#">Blog</a></li>
+      <li><a class="menuItem" href="#">Careers</a></li>
+    </ul>
+    <button class="hamburger">
+      <i class="menuIcon material-icons">menu</i>
+      <i class="closeIcon material-icons">close</i>
+    </button>
     <main>
       <!-- top section Next Generation digital banking -->
       <section class="top-section">
